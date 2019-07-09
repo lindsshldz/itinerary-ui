@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Trip Planner</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Trip Planner</h1></a>
+            </div>
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+             <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li id="navHomeButton" class="visible-xs active">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span> Home</a>
+              </li>
+              <li id="navMenuButton">
+                <a href="#" onclick="$dc.loadMenuCategories();">
+                  <span class="glyphicon glyphicon-send"></span><br class="hidden-xs"> Trips</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-pencil"></span><br class="hidden-xs"> Edit</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-eye-open"></span><br class="hidden-xs"> View</a>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav><!-- #header-nav -->
+    </header>
+  
+    <div class="jumbotron">
+      <div id="home-tiles" class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 col-md-offset-1">
+          <a href="pages/newtrip.html">
+            <div id="trip-tile"><span>Plan a trip</span></div></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <a href="pages/tripdetails.html">
+            <div id="edit-tile"><span>Edit a trip</span></div>
+        </div>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+                <a href="pages/printtrip.html">
+            <div id="view-tile">
+              <span>View your trip</span>
+            </div>
+          </a>
+        </div>
+      </div><!-- End of #home-tiles -->
+  
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+        </div>
+        <div class="text-center">&copy; Copyright Trips R Us 2019</div>
+      </div>
+    </footer>
+  
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
+
+  <script src="js/trips.js"></script>
